@@ -16,7 +16,7 @@ exports.listar_contatos = function(req, res) {
 
 
 exports.criar_contato = function(req, res) {
-  var new_task = new contato(req.body);
+  var new_task = new Contato(req.body);
   new_task.save(function(err, contato) {
     if (err)
       res.send(err);
